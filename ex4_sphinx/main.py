@@ -4,8 +4,8 @@ from fastapi.staticfiles import StaticFiles
 app = FastAPI()
 
 # Mount the "main" directory to serve static files
-# app.mount("/", StaticFiles(directory="./ex4_sphinx/main", html=True), name="main") # For vercel
-app.mount("/", StaticFiles(directory="./main", html=True), name="main") # For local fastapi
+app.mount("/", StaticFiles(directory="./ex4_sphinx/main", html=True), name="main") # For vercel
+# app.mount("/", StaticFiles(directory="./main", html=True), name="main") # For local fastapi
 
 # For this example, the vercel.json file should look like this:
 """
