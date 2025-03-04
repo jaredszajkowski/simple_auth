@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "ex8_hw5_sphinx_auth/main.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "ex8_hw5_sphinx_auth/main.py"
+        }
+    ]
+} 
